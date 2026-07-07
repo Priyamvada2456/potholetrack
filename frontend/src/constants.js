@@ -16,5 +16,5 @@ export const STATUS_ORDER = ["reported", "verified", "in_progress", "fixed"];
 
 // Backend runs on :5000 in dev; Vite proxies /api and /uploads there (see vite.config.js),
 // so plain relative paths work both in dev and once built behind the same host in prod.
-export const API_BASE = "/api";
-export const UPLOADS_BASE = "";
+export const API_BASE = `${BACKEND_URL}/api`;
+export const UPLOADS_BASE = BACKEND_URL;
